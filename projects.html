@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pradeep Pujari">
-    <meta name="description" content="Pradeep Pujari | Data Engineer with 3+ Years Experience">
-    <title>Pradeep Pujari | Projects</title>
+    <meta name="description" content="Showcasing Pradeep Pujari's data engineering projects, including ETL pipeline development and big data solutions using Spark, Hive, and AWS.">
+    <meta name="keywords" content="Data Engineering, Projects, Spark, Hive, AWS, ETL Development">
+    <title>Projects | Pradeep Pujari</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" loading="lazy">
 </head>
 <body>
     <div class="sidebar">
@@ -22,62 +22,59 @@
             <li><a href="projects.html" class="active"><i class="fas fa-project-diagram"></i> Projects</a></li>
             <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
             <li><a href="hobbies_soft_skills.html"><i class="fas fa-heart"></i> Hobbies & Soft Skills</a></li>
-			<li><a href="contact.html" class="active"><i class="fas fa-address-book"></i> Contact</a></li>
+            <li><a href="contact.html"><i class="fas fa-address-book"></i> Contact</a></li>
         </ul>
     </div>
 
     <div class="main-content">
-        <h1>My Projects</h1>
+        <h1>Projects</h1>
 
-        <!-- Organization-Specific Projects Section -->
-        <section class="organization-projects">
-            <h2><i class="fas fa-building"></i> Organization: XYZ Corp</h2>
+        <!-- Project 1 -->
+        <article class="project">
+            <h2><i class="fas fa-credit-card"></i> Financial Intelligence Unit: On-Prem Data Processing and ETL Pipeline Development</h2>
+            <p><strong>Description:</strong> Designed an ETL pipeline to process financial transactions for determining rewards, EMI eligibility, discounts, and offers.</p>
+            <p><strong>Tech Stacks:</strong> Spark, Hive, Scala, Python, SQL, PySpark, SparkSQL, AWS-S3, EMR, Athena, Glue</p>
 
-            <!-- Project 1: Financial Intelligence Unit -->
-            <section class="project">
-                <h3><i class="fas fa-credit-card"></i> Project 1: Financial Intelligence Unit: On Prem Data Processing and ETL Pipeline Development</h3>
-                <p><strong>Description:</strong> Designed an ETL (Extract, Transform, Load) pipeline for handling credit cards and financial transactions data to determine rewards, EMI eligibility, discounts, and offers.</p>
-                <p><strong>Tech Stacks:</strong> Spark, Hive, Scala, Python, SQL, Scala Spark, PySpark, SparkSQL, AWS -S3, EMR, Athena, Glue</p>
-                
-                <h4>Project Workflow:</h4>
-                <ul>
-                    <li><strong>Data Ingestion:</strong> Ingested transactional data from financial systems (credit card transactions, bank transfers). Stored raw and processed data in Hive, HDFS, AWS S3.</li>
-                    <li><strong>Data Cataloging:</strong> Used Impala/Hue to scan data stored in Hive tables to discover and manage this data effortlessly and AWS Glue Crawlers to scan data stored in Amazon S3 for cataloging metadata.</li>
-                    <li><strong>Data Processing:</strong> Used Scala Spark, PySpark, SparkSQL, and Python on Jupyter Notebooks for data cleaning, transformation, and aggregation.</li>
-                    <li><strong>Data Storage:</strong> Stored the transformed and enriched data back into Hive Tables / AWS S3 in a structured format (e.g., Parquet) for efficient querying and analysis.</li>
-                    <li><strong>Data Querying and Analysis:</strong> Performed ad-hoc SQL queries on Hive Tables data with Impala/Hue and in AWS Athena enabling analysts to explore data and generate insights without additional infrastructure.</li>
-                </ul>
-                
-                <h4>Potential Outcomes of the Project:</h4>
-                <ul>
-                    <li>The credit card ETL pipelines swiftly determined discounts, EMI eligibility, and rewards.</li>
-                    <li>Used Scala Spark, PySpark features for varying data loads. Optimized Spark techniques for data transformation and storage.</li>
-                </ul>
-            </section>
+            <h3>Workflow:</h3>
+            <ul>
+                <li><strong>Data Ingestion:</strong> Transactional data ingested from financial systems into Hive, HDFS, and AWS S3.</li>
+                <li><strong>Data Cataloging:</strong> Employed Impala/Hue and AWS Glue Crawlers for metadata discovery and cataloging.</li>
+                <li><strong>Data Processing:</strong> Data cleaned, transformed, and aggregated using Scala Spark, PySpark, SparkSQL, and Python.</li>
+                <li><strong>Data Storage:</strong> Enriched data stored in Hive Tables and AWS S3 (Parquet format) for efficient querying.</li>
+                <li><strong>Data Querying and Analysis:</strong> Insights derived using Impala, Hue, and Athena for ad-hoc queries.</li>
+            </ul>
 
-            <!-- Project 2: Data Migration and Integration -->
-            <section class="project">
-                <h3><i class="fas fa-exchange-alt"></i> Project 2: Data Migration and Integration: On-Prem Data Processing and ETL Pipeline Development</h3>
-                <p><strong>Description:</strong> Designed and implemented a robust ETL (Extract, Transform, Load) pipeline for data migration and integration into a centralized data repository, leveraging on-premises data computing capabilities.</p>
-                <p><strong>Tech Stacks:</strong> SQL, Python, Scala, PySpark, SparkSQL, SQOOP, Hive, HBase, Cron Jobs, Shell Scripts</p>
-                
-                <h4>Project Workflow:</h4>
-                <ul>
-                    <li><strong>Data Ingestion:</strong> Used Sqoop / PySpark to import data from RDBMS to HDFS and also ingested semi-structured data from HDFS into Hive tables.</li>
-                    <li><strong>Data Processing:</strong> Utilized PySpark, SparkSQL, and Hive and their optimization techniques for data transformation and aggregation.</li>
-                    <li><strong>Data Storage:</strong> Stored raw and transformed data in HDFS and Hive for structured querying. Loaded processed data into HBase for low-latency access.</li>
-                    <li><strong>Scheduling:</strong> Employed Cron Job / Airflow for task scheduling and pipeline orchestration.</li>
-                    <li><strong>Version Control & Deployment:</strong> Managed code using Git and GitHub; implemented CI/CD pipelines for automated testing and deployment.</li>
-                </ul>
+            <h3>Outcomes:</h3>
+            <ul>
+                <li>Enhanced speed and accuracy in determining discounts, EMI eligibility, and rewards.</li>
+                <li>Optimized data processing and storage through Spark techniques.</li>
+            </ul>
+        </article>
 
-                <h4>Potential Outcomes of the Project:</h4>
-                <ul>
-                    <li>Developed a robust ETL pipeline capable of efficiently migrating and integrating data from RDBMS sources.</li>
-                    <li>Enhanced data computing performance through PySpark in-memory computations.</li>
-                    <li>Structured data storage in Hive and real-time data access and updates facilitated by HBase.</li>
-                </ul>
-            </section>
-        </section>
+        <!-- Project 2 -->
+        <article class="project">
+            <h2><i class="fas fa-exchange-alt"></i> Data Migration and Integration: On-Prem Data Processing and ETL Pipeline Development</h2>
+            <p><strong>Description:</strong> Built and implemented an ETL pipeline for migrating and integrating data into a centralized repository.</p>
+            <p><strong>Tech Stacks:</strong> SQL, Python, Scala, PySpark, SparkSQL, SQOOP, Hive, HBase, Cron Jobs, Shell Scripts</p>
+
+            <h3>Workflow:</h3>
+            <ul>
+                <li><strong>Data Ingestion:</strong> Imported data from RDBMS to HDFS using Sqoop/PySpark and ingested semi-structured data into Hive tables.</li>
+                <li><strong>Data Processing:</strong> Optimized transformations and aggregations using PySpark, SparkSQL, and Hive.</li>
+                <li><strong>Data Storage:</strong> Raw and processed data stored in HDFS, Hive, and HBase for structured querying and low-latency access.</li>
+                <li><strong>Scheduling:</strong> Automated workflows with Cron Jobs and Airflow.</li>
+                <li><strong>Version Control:</strong> Code managed with Git/GitHub and deployed via CI/CD pipelines.</li>
+            </ul>
+
+            <h3>Outcomes:</h3>
+            <ul>
+                <li>Successfully migrated and integrated data from multiple RDBMS sources.</li>
+                <li>Enhanced performance through PySpark in-memory computations.</li>
+                <li>Enabled real-time data access with HBase.</li>
+            </ul>
+        </article>
+
+        <!-- Add more projects as needed -->
     </div>
 </body>
 </html>
